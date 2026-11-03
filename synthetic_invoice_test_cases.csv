@@ -1,0 +1,5 @@
+﻿invoice_no,vendor_name,invoice_date,total_amount,test_case
+INV-1001,Northstar Office Supplies,2026-10-15,12500.00,Valid unique invoice
+,Blue River Services,2026-10-16,8400.00,Missing invoice number
+INV-1003,Metro Tech Traders,2026-10-17,,Missing total amount
+INV-1001,Northstar Office Supplies,2026-10-15,12500.00,Duplicate of INV-1001

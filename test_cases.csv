@@ -1,0 +1,8 @@
+﻿Test ID,Scenario,Test input,Expected outcome,Actual result,Status,Execution ID / Notes
+T01,Valid invoice,Complete unique text-based PDF,One new row in Invoice Database,,Not run,
+T02,Missing invoice number,PDF without invoice number,Exception row + email alert,,Not run,
+T03,Missing total amount,PDF without total amount,Exception row + email alert,,Not run,
+T04,Duplicate invoice,Existing vendor + invoice number,No second valid row; duplicate exception,,Not run,
+T05,Duplicate exception,Same exception processed again,No repeated exception row or alert,,Not run,
+T06,Non-PDF file,JPG/DOCX/TXT in watched folder,Ignored by PDF filter,,Not run,
+T07,Scanned PDF,Image-only PDF,Text extraction limitation identified; OCR not assumed,,Not run,
